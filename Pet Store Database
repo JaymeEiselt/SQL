@@ -1,0 +1,9 @@
+CREATE TABLE pet_store (id INTEGER PRIMARY KEY, item TEXT, quantity INTEGER, price INTEGER, sale TEXT);
+INSERT into pet_store VALUES (1, "leash", 10, 12, "no");
+INSERT into pet_store VALUES (2, "food bowl", 3, 6, "yes");
+INSERT into pet_store VALUES (3, "dog toy", 2, 15, "yes");
+INSERT into pet_store VALUES (4, "cat toy", 3, 7, "yes");
+INSERT into pet_store VALUES (5, "treats", 10, 5, "no");
+INSERT into pet_store VALUES (6, "cat litter", 4, 8, "yes");
+SELECT * FROM pet_store ORDER BY price;
+SELECT MAX(price) FROM pet_store;
